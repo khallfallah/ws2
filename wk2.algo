@@ -1,0 +1,38 @@
+ALGORITHM somme vecteurs;
+const N=100;
+type tabEnt=tableau [1..N] de entier
+var v1 , v2,v3 :tabEnt; v1 , v2 ,v3 : tableau [1..N] de entier;
+i : entier;
+j:entier;
+Debut
+Ecrire('ecrire les elements de votre premier vecteur');
+pour i de 1 a N faire 
+lire (v1[i]);
+faire 
+Ecrire('ecrire les elements de votre deuxieme vecteur');
+pour j de 1 a N faire 
+lire (v2[j]);
+faire
+pou i et j de 1 a N faire 
+v3[i,j]=v1[i]+v2[j];
+faire ('ecrire la somme de deux vecteurs : ');
+fin pour 
+2 eme probleme
+Algorithm dot_product
+Vaiables
+Tableau V ( N ):reel
+Tableau U ( N ):reel
+i : entier;
+p : entier;
+Debut
+repeter i <-- 0 à N pas 1  jusquà
+Ecrire ("donner l element" ,i+1 , "de la vecteur V")
+Lire (v(i))
+Ecrire ("donner l element" ,i+1 , "de la vecteur U")
+lire (U(i))
+fin repeter
+p <-- 0
+repeter i <-- 0 à N pas 1 jusquà
+p <-- p+ V(i)*U(i)
+Ecrire ("le produit scalaire de vecteurs V et U est: ",p)
+fin
